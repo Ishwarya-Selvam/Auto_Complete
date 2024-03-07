@@ -1,0 +1,38 @@
+<!-- Create Auto_Complete/Typeahead
+
+Must Have:
+
+On typing inside the search bar, it should suggest related terms
+
+https://restcountries.com/v3.1/all
+
+Good to have:
+
+Search must be performant enough
+The search should avoid un-necessary network calls: debouning, throttling
+It should persist perviously fetched data(like local cache)
+Atleast 2 character to make a network call -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto_Complete</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="autocomplete">
+        <h2 class="heading">Auto-Complete</h2>
+        <input type="text" class="searchInput">
+        <ul class="suggestionBox">
+            
+        </ul>
+    </div>
+
+    <script type="module" src="script.js"></script>
+    <script type="module" src="fetchDataModule.js"></script>
+</body>
+</html>
